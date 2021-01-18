@@ -1,3 +1,24 @@
+Nama Kelompok :
+1. Muhammad Hussein Isron 	17051204065
+2. Dimas Erlangga 		17051204076
+3. Aldi Bariqi 			17051204050
+
+Catatan :
+- Aplikasi menggunakan framework code igniter
+- CSS Bootstrap
+- SMTP
+
+Instalasi :
+1. Import database toko_online
+2. Konfigurasi port MySQL localhost:3307
+3. Konfigurasi base url localhost:8080
+
+Link video overview :
+https://drive.google.com/file/d/1kaHNuYpCoUMFsglntCxvfn_750WjvXZO/view?usp=sharing
+
+Link web hosting :
+https://frameworktib.000webhostapp.com/
+
 ###################
 What is CodeIgniter
 ###################
