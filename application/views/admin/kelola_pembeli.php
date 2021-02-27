@@ -1,7 +1,6 @@
 
 <div class="container-fluid">
 	<h4>Pengelolaan Pembeli</h4>
-
 	<table class="table table-bordered table-hover table-striped">
 		<tr>
 			<th>Id Pembeli</th>
@@ -11,9 +10,7 @@
 			<th>Terakhir Login</th>
 			<th>Tanggal Pendaftaran</th>
 			<th colspan="2">AKSI</th>
-			
 		</tr>
-
 		<?php foreach ($pembeli as $beli) : ?>
 			<tr>
 				<td><?php echo $beli->user_id ?></td>

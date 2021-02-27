@@ -23,6 +23,17 @@ class Model_user extends CI_Model{
 		}
 	}
 
+	public function tampil_data_penjualan($username)
+	{
+		$result = $this->db->where('nama', $username) 
+							->get('tb_user');
+		if($result->num_rows() > 0){
+			return $result->row();
+		}else{
+			return array();
+		}
+	}
+
 	public function tampil_data_penjual()
 	{
 		return $this->db->where('role_id',3)

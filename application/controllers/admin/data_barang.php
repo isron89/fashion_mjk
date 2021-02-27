@@ -17,6 +17,7 @@ class Data_barang extends CI_Controller{
 	{
 		$data['datambah'] = $this->model_barang->tampil_kat();
 		$data['barang'] = $this->model_barang->tampil_data()->result();
+		$data['userr'] = $this->model_user->tampil_data_penjual();
 		$this->load->view('templates_admin/header');
 		$this->load->view('templates_admin/sidebar');
 		$this->load->view('admin/data_barang', $data);
@@ -50,6 +51,41 @@ class Data_barang extends CI_Controller{
 			'stok'	=> $stok,
 			'gambar'	=> $gambar
 		);
+		$this->model_barang->tambah_barang($data, 'tb_barang');
+		redirect('admin/data_barang/index');
+	}
+	public function tambah_aksi_admin()
+	{
+		$nama_brg	= $this->input->post('nama_brg');
+		$nama_penjual	= $this->input->post('nama_penjual');
+		$keterangan	= $this->input->post('keterangan');
+		$kategori	= $this->input->post('kategori');
+		$harga	= $this->input->post('harga');
+		$stok	= $this->input->post('stok');
+		$gambar	= $_FILES['gambar']['name'];
+		if ($gambar =''){}else{
+			$config['upload_path'] = './uploads';		
+			$config['allowed_types'] ='jpg|jpeg|png|gif';
+			$this->load->library('upload', $config);
+			if(!$this->upload->do_upload('gambar')){
+				echo "gambar gagal di upload!";
+			}else {
+				$gambar=$this->upload->data('file_name');
+			}
+		}
+		$userr = $this->model_user->tampil_data_penjualan($nama_penjual);
+		$data = array(
+			'nama_brg'	=> $nama_brg,
+			'id_penjual' => $userr->user_id,
+			'nama_penjual'	=> $nama_penjual,
+			'keterangan'	=> $keterangan,
+			'kategori'	=> $kategori,
+			'harga'	=> $harga,
+			'stok'	=> $stok,
+			'gambar'	=> $gambar
+		);
+		var_dump($data);
+		exit();
 		$this->model_barang->tambah_barang($data, 'tb_barang');
 		redirect('admin/data_barang/index');
 	}

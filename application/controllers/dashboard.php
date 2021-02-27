@@ -5,7 +5,6 @@ class Dashboard extends CI_Controller{
 
 	public function index()
 	{
-
 		$data=array();
 		$data['barang'] = $this->model_barang->tampil_data()->result();
 		$this->load->view('templates/header');
@@ -51,10 +50,7 @@ class Dashboard extends CI_Controller{
 
 	public function detail_keranjang()
 	{
-		$hasil = $this->cart->contents();
-		// echo "<pre>";
-		// var_dump($hasil);
-		// echo "</pre>";
+		//$hasil = $this->cart->contents();
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar3');
 		$this->load->view('keranjang');
@@ -115,9 +111,6 @@ class Dashboard extends CI_Controller{
 	public function detail($id_brg)
 	{
 		$data['barang'] = $this->model_barang->detail_brg($id_brg);
-		//$jml = 1;
-		// var_dump($data);
-		// exit();
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar3');
 		$this->load->view('detail_barang',$data);

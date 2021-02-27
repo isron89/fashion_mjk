@@ -12,7 +12,6 @@
 				<input type="hidden" name="id_brg" class="form-control" value="<?php echo $brg->id_brg ?>">
 				<input type="text" name="keterangan" class="form-control" value="<?php echo $brg->keterangan ?>">
 			</div>
-
 			<div class="for-group">
 				<label>Kategori</label>
 				<select name="kategori" class="form-control">
@@ -21,7 +20,6 @@
                 	} ?>
         		</select>
 			</div>
-
 			<div class="for-group">
 				<label>Harga</label>
 				<input type="text" name="harga" class="form-control" value="<?php echo $brg->harga ?>">
@@ -30,9 +28,7 @@
 				<label>Stok</label>
 				<input type="text" name="stok" class="form-control" value="<?php echo $brg->stok ?>">
 			</div>
-
 			<button type="submit" class="btn btn-primary btn-sm mt-3">Simpan</button>
 		</form>
-
 	<?php endforeach; ?>
 </div>

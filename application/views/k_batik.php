@@ -30,7 +30,6 @@
   <div class="row text-center mt-4">
     
     <?php foreach ($k_batik as $brg) : ?>
-
       <div class="card ml-3" style="width: 12.5rem;">
   <img src="<?php echo base_url().'/uploads/'.$brg->gambar ?>" class="card-img-top" alt="...">
   <div class="card-body">
@@ -40,9 +39,7 @@
     <?php echo anchor('dashboard/tambah_ke_keranjang/' .$brg->id_brg, '<div class="btn btn-sm btn-outline-primary">Tambah troli</div>') ?>
       <?php echo anchor('dashboard/detail/' .$brg->id_brg, '<div class="btn btn-sm btn-outline-success">Detail</div>') ?>
   </div>
-</div>
-
-
+  </div>
     <?php endforeach; ?>
   
 </div>

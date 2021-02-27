@@ -1,6 +1,5 @@
 <div class="container-fluid">
 	<h3><i class="fas fa-edit"></i>Edit Data Pembeli</h3>
-
 	<?php foreach($akun as $pembeli) : ?>
 		<form method="post" action="<?php echo base_url(). 'admin/kelola_pembeli/update' ?>">
 			<div class="for-group">
@@ -36,9 +35,7 @@
 				<label>Tanggal Daftar</label>
 				<input type="text" name="user_create" class="form-control" disabled value="<?php echo $pembeli->user_create ?>">
 			</div>
-
 			<button type="submit" class="btn btn-primary btn-sm mt-3">Simpan</button>
 		</form>
-
 	<?php endforeach; ?>
 </div>

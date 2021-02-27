@@ -9,8 +9,7 @@
     		<th>Keterangan</th>
     		<th>Saldo</th>
     		<th>Aksi</th>
-    	</tr>
-    	
+    	</tr>	
     	<?php
         $no=1;
     	foreach($kas as $kass) : ?>
@@ -19,12 +18,9 @@
                 <td>Hussein Isron</td>
     			<td><?php echo $kass->tanggal ?></td>
     			<td><?php echo $kass->keterangan ?></td>
-    			<td><?php echo $kass->saldo ?></td>
-    			
+    			<td><?php echo $kass->saldo ?></td>		
     			<td><?php echo anchor('admin/kas/edit/' .$kass->id_kas, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?></td> 
 				<!-- <td><?php echo anchor('admin/kas/hapus/' .$kass->id_kas, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td> -->
-    			<!--<td><div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div></td>
-                <td><div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div></td> -->
     		</tr>
     	<?php endforeach; ?>
     </table>

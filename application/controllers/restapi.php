@@ -32,6 +32,6 @@ class restapi extends CI_Controller{
       if(!$result){die("Connection Failure");}
       curl_close($curl);
       return $result;
+    }
 }
-
  ?>

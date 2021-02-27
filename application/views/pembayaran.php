@@ -51,19 +51,13 @@
 						<option>POS</option>
 					</select>
 				</div>
-
 				<button type="submit" class="btn btn-sm btn-primary mb-3">Pesan</button>
-				
 			</form>
-
 			 <?php
 		}else
 		{
-			
 			 echo "<h5>Keranjang Belanja Anda Masih Kosong";
-			 
 		}
-
 			?>
 		</div>
 

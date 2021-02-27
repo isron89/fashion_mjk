@@ -15,18 +15,10 @@ class Data_barang extends CI_Controller{
 	}
 	public function index()
 	{
-		
 		$usr = $this->session->userdata('username');
-		// $user = $this->model_user->tampil_data_pembelian($usr);
-		// $userpar = $user['user_id'];
-
-		// $where = array('username'	=>$usr);
-		// $dat[] = $this->model_user->tampil_user_beli($where,'tb_user')->result();
-		// $a = $this->$dat['user_id'];
 		$userr = $this->model_user->tampil_data_pembelian($usr);
 		$userrr = $userr->user_id;
-		// var_dump($userrr);
-		// exit;
+
 		$data['datambah'] = $this->model_barang->tampil_kat();
 		$data['barang'] = $this->model_barang->tampil_data_penjual($userrr)->result();
 
