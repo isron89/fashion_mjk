@@ -1,7 +1,4 @@
-Nama Kelompok :
-1. Muhammad Hussein Isron 	17051204065
-2. Dimas Erlangga 		17051204076
-3. Aldi Bariqi 			17051204050
+Author : Muhammad Hussein Isron
 
 Catatan :
 - Aplikasi menggunakan framework code igniter
@@ -18,6 +15,9 @@ https://drive.google.com/file/d/1kaHNuYpCoUMFsglntCxvfn_750WjvXZO/view?usp=shari
 
 Link web hosting :
 https://frameworktib.000webhostapp.com/
+
+Big thanks for boostrap template admin
+Thanks for everyone
 
 ###################
 What is CodeIgniter
