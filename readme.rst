@@ -1,7 +1,7 @@
 Author : Muhammad Hussein Isron
 
 Catatan :
-- Aplikasi menggunakan framework code igniter
+- Aplikasi menggunakan PHP framework code igniter
 - CSS Bootstrap
 - SMTP
 
