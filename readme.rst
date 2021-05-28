@@ -7,8 +7,8 @@ Catatan :
 
 Instalasi :
 1. Import database toko_online 
-2. Konfigurasi port MySQL localhost:3307 
-3. Konfigurasi base url localhost:8080 
+2. Konfigurasi port MySQL on localhost:3307 
+3. Konfigurasi base url on localhost:8080 
 
 Link video overview :
 https://drive.google.com/file/d/1kaHNuYpCoUMFsglntCxvfn_750WjvXZO/view?usp=sharing
