@@ -1,4 +1,4 @@
-Author : Muhammad Hussein Isron
+Author : Hussein Isron
 
 Catatan :
 - Aplikasi menggunakan PHP framework code igniter
